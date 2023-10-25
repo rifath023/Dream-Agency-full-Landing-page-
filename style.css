@@ -1,0 +1,623 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+body{
+    background: url(/images/Vector\ 1.png) no-repeat right top;
+    background-size:  40%;
+    overflow-x: hidden;
+}
+header{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* justify-content: center; */
+}
+header h3{
+    margin-left: -10%;
+    width: 180px;
+    height: 36px;
+    flex-shrink: 0;
+    color: #331B3B;
+    font-family: Playfair Display;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.24px;
+}
+header ul{
+    list-style: none;
+    color: #331B3B;
+    font-family: Hind Vadodara;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.16px;
+    display: flex;
+}
+header li{
+    margin: 20px;
+    cursor: pointer;
+}
+.active::after{
+    content: '';
+    display: block;
+    width: 50%;
+    height: 3px;
+    background: 3px gold;
+    transition: all .3s ;
+}
+header li::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: 3px gold;
+    transition: all .3s ;
+}
+header li:hover:after{
+    width: 100%;
+}
+.social-media {
+    display: flex;
+    font-size: 20px;
+}
+.common{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    width: 30px;
+    height: 32px;
+    padding: 5px;
+    border: 2px solid rgba(51, 27, 59, 0.64);
+    border-radius: 48% 33% 51% 36% / 47% 27% 49% 33% ;
+    cursor: pointer;
+}
+.hero-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-area .common-div{
+    width: 498px;
+    margin-top: 150px;
+    margin: 40px;
+}
+.hero-area .common-div img{
+    width: 120%;
+}
+.hero-area .c1{
+    margin-top: 70px;
+}
+.hero-area .c1 h1{
+    color: #331B3B;
+    font-family: Hind Vadodara;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 99.8%; /* 86.826px */
+    letter-spacing: -0.87px;
+}
+.hero-area .c1 span{
+    color: #331B3B;
+    font-family: Hind Vadodara;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 99.8%;
+    letter-spacing: -0.87px;
+}
+.business::after{
+    content: '';
+    height: 20px;
+    width: 55%;
+    background: gold;
+    display: block;
+    margin-top: -25px;
+}
+.hero-area .c1 p{
+    margin-top: 25px;
+    width: 515px;
+    height: 82px;
+    flex-shrink: 0;
+    color: rgba(51, 27, 59, 0.9);
+    font-family: Hind Vadodara;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 146.3%; /* 24.871px */
+    letter-spacing: 0.34px;
+}
+.hero-area .c1 button{
+    margin-top: 25px;
+
+    color: #FFF;
+    font-family: Hind Vadodara;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    width: 180px;
+    height: 55px;
+    flex-shrink: 0;
+
+    border-radius: 10px;
+    background: #331B3B;
+}
+.sec-2{
+    background: url(/images/Vector\ 3.png) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.sec-2 h1{
+    color: #331B3B;
+    text-align: center;
+    font-family: Hind Vadodara;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 106.3%; /* 51.024px */
+    letter-spacing: -0.48px;
+}
+.sec-2 span{
+    color: #331B3B;
+    font-family: Hind Vadodara;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 106.3%;
+    letter-spacing: -0.48px;
+    display: flex;
+}
+.heading-2{
+    width: 30%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+.b1{
+    position: relative;
+    width: 170px;
+    margin-left: 10px;
+}
+.b1::after{
+    content: '';
+    height: 15px;
+    width: 100%;
+    background: gold;
+    display: block;
+    margin-top: -20px;
+}
+.courses{
+    display: flex;
+    margin-left: 200px;
+}
+.courses .c-d{
+    width: 280px;
+    height: 170px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    margin-left: 20px;
+}
+.courses h3{
+    margin-bottom: 10px;
+}
+.courses .icon{
+    width: 52px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FFDED4;
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.arrow{
+    position: absolute;
+    bottom: 60px;
+    left: 90px; 
+}
+.arrow button{
+    font-size: 20px;
+    padding: 10px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 5px;
+}
+.arrow .fade{
+    color: rgba(0, 0, 0, 0.4);
+    border-color: rgba(0, 0, 0, 0.4);
+}
+.section-2-div{
+    margin-bottom: 50px;
+}
+.about-us{
+    margin-top: -70px;
+}
+.about-us .b1{
+    display: inline-block;
+}
+
+/* from here i stopped working , i'll do latter */
+.sec-4{
+    background: url(/images/vector\ 5.png) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.sec-4 .head{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.sec-4 h1, .sec-4 p{
+    margin-top: 50px;
+}
+.sec-4 h1{
+    color: #331B3B;
+    font-family: Hind Vadodara;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 106.3%; /* 51.024px */
+    letter-spacing: -0.48px;
+}
+.sec-4 span{
+    color: #331B3B;
+    font-family: Hind Vadodara;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 106.3%;
+    letter-spacing: -0.48px;
+}
+.sec-4 span .b1{
+    display: inline-block;
+}
+.sec-4 p{
+    width: 515px;
+    height: 82px;
+    flex-shrink: 0;
+    color: #331B3B;
+    font-family: Hind Vadodara;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 146.3%; /* 24.871px */
+    letter-spacing: 0.34px;
+}
+.sec-4 .works{
+    display: flex;
+    margin: 70px 0 50px 240px;
+}
+.sec-4 .work-common{
+    margin-bottom: 8%;
+    margin-right: 20px;
+    position: relative;
+    width: 350px;
+    height: 320px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.05);
+}
+.sec-4 .works .work-common .img{
+    height: 195px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;  
+    margin: 20px 10px ;
+    position: absolute;
+}
+.sec-4 .works .work-common #desktop{
+    border-radius: 10px;
+    overflow: hidden;
+    width: 240px;
+    height: 195px;
+    flex-shrink: 0;
+    background: #FFF;
+    box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.1);
+    margin-right: 10px ;
+}
+.sec-4 .works .work-common #phone{
+    border-radius: 10px;
+    overflow: hidden;
+    width: 75px;
+    height: 195px;
+    flex-shrink: 0;
+    background: #FFF;
+    box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.1);
+}
+.sec-4 .desktop {
+    width: 278px;
+    height: 348px;
+    flex-shrink: 0;
+}
+.sec-4 .phone{
+    width: 77px;
+    height: 1282px;
+    flex-shrink: 0;
+}
+.sec-4 .works .work-common .title{
+    margin-left: 2%;
+
+    height: 100px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    bottom: 6%;
+    left: 10px;
+}
+.sec-4 .works .work-common .title h1{
+    
+    margin-top: 11%;
+    color: #331B3B;
+    font-family: Hind Vadodara;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 146.3%; 
+   }
+.sec-4 .works .work-common .title button{
+    width: 92px;
+    height: 23px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    border: 1px solid #343434;
+    color: #331B3B;
+    font-family: Hind Vadodara;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+
+    margin-top: 12%;
+
+    background-color: white;
+    cursor: pointer;
+    
+}
+
+.sec-4 .works .work-2 .desktop{
+    width: 287px;
+    height: 808px;
+    flex-shrink: 0;
+}
+.sec-4 .works .work-3 .desktop{
+    width: 325px;
+    height: 1822px;
+    flex-shrink: 0;
+}
+.sec-4 .works .work-3 .phone{
+    width: 89px;
+    height: 238px;
+    flex-shrink: 0;
+}
+/* to here i stopped working , i'll do latter */
+
+/* <!-- section-5 testimonial starts --> */
+.sec-5{
+    margin-top: 75px;
+}
+.sec-5 h1{
+    color: #331B3B;
+    text-align: center;
+    font-family: Hind Vadodara;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110.8%; /* 53.184px */
+    letter-spacing: -0.48px;
+}
+.sec-5 span{
+    color: #331B3B;
+    font-family: Hind Vadodara;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 110.8%;
+    letter-spacing: -0.48px;
+}
+.sec-5 .b1{
+    display: inline-block;
+}
+.sec-5 .testimonials{
+    margin: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.sec-5 .testimonials .icon{
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+}
+.sec-5 .testimonials p{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 384px;
+    height: 136px;
+    flex-shrink: 0;
+    color: #331B3B;
+    font-family: Hind Vadodara;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 159.3%; /* 25.488px */
+    letter-spacing: 0.32px;
+}
+.sec-5 .testimonials .name{
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-family: Hind Vadodara;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 159.3%; /* 25.488px */
+    letter-spacing: 0.32px;
+}
+.sec-5 .testimonials .c-t{
+    width: 448px;
+    height: 310px;
+    flex-shrink: 0;
+    background: #FFF;
+    box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.08);
+    padding: 15px;
+}
+/* <!-- section-4 testimonial end --> */
+
+/* <!-- footer section start --> */
+
+footer{
+    width: 100%;
+    height: 453px;
+    flex-shrink: 0;
+    border-radius: 0px 158px 0px 0px;
+    background: #000;
+    padding: 77px 50px 0px 0px ;
+    display: flex;
+    justify-content: space-around;
+}
+footer .one-f h1{
+    width: 275px;
+    height: 52px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Playfair Display;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.36px;
+}
+footer .one-f p{
+    width: 439px;
+    height: 136px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Hind Vadodara;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 159.3%; /* 25.488px */
+    letter-spacing: 0.32px;
+    margin-top: 15px;
+}
+footer .one-f h3{
+    color: #FFF;
+    font-family: Hind Vadodara;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 159.3%; /* 25.488px */
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+    margin-top: -10px;
+}
+footer .one-f input{
+    width: 263px;
+    height: 52px;
+    flex-shrink: 0;
+    border: 1px solid #FFF;
+    background: none;
+    color: #FFF;
+    font-family: Hind Vadodara;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 159.3%; /* 25.488px */
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+    padding: 10px;
+}
+input::placeholder{
+    color: #FFF;
+  }
+
+  footer .one-f button{
+    width: 143px;
+    height: 52px;
+    flex-shrink: 0;
+    border: 1px solid #FFF;
+    background: #FFF;
+    color: #000;
+    font-family: Hind Vadodara;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 159.3%; /* 25.488px */
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+  }
+  .email{
+    display: flex;
+    align-items: center;
+  }
+
+  footer .two-f,  footer .two-f img{
+    width: 484px;
+    height: 300px;
+    flex-shrink: 0;
+    position: relative;
+  }
+  footer .two-f div{
+    position: absolute;
+    width: 197px;
+    height: 84px;
+    flex-shrink: 0;
+    background: #FFF;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+    top: 26px;
+    left: 36px;
+    padding: 10px;
+  }
+  footer .two-f div h1{
+    width: 122px;
+    height: 50px;
+    flex-shrink: 0;
+    color: #414141;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 134.8%; /* 21.568px */
+    margin-bottom: -2px;
+  }
+
+  footer .two-f div span{
+    color: #414141;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 134.8%;
+  }
+
+  footer .two-f div a{
+    text-decoration: none;
+    color: #51A0DC;
+    font-family: Hind Vadodara;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 159.3%; /* 22.302px */
+    display: block;
+  }
+/* <!-- footer section end --> */
